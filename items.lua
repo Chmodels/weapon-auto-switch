@@ -7,15 +7,7 @@ return {
         weight = 100,
         stack = false,
         close = true,
-        allowArmed = false,
-        buttons = {
-            {
-                label = "Install",
-                action = function(slot)
-                    TriggerEvent("autoSwitch:useItem", "install")
-                end
-            }
-        }
+        allowArmed = false
     },
     {
         name = "remove_switch",
@@ -24,14 +16,6 @@ return {
         weight = 100,
         stack = false,
         close = true,
-        allowArmed = false,
-        buttons = {
-            {
-                label = "Remove",
-                action = function(slot)
-                    TriggerEvent("autoSwitch:useItem", "remove")
-                end
-            }
-        }
+        allowArmed = false
     }
 }
